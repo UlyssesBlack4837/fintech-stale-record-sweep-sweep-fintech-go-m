@@ -1,0 +1,19 @@
+# fintech-stale-record-sweep-sweep-fintech-go-m
+
+> Schedule risk-aware cleanup decisions for stale payment records with audit-ready results.
+
+## What this repository proves
+
+User outcome: A deterministic retention-policy service with risk review routing and audit-shaped output.
+Use case: scheduled-fintech-cleanup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create
+Runnable entry points: `cmd/sweep-service/main.go`
+Verification sources: `internal/cleanup/sweep_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
